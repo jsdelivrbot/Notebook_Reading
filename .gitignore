@@ -1,0 +1,7 @@
+*.pdf
+*.log
+*.aux
+*.gz
+*.fdb_latexmk
+*.fls
+管理信息系统.md

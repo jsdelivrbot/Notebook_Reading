@@ -1,0 +1,13 @@
+﻿\documentclass{article}
+\usepackage[UTF8]{ctex}
+\begin{document}
+Small is beautiful.\\
+入门过程：\\
+添加LatexWorkshop插件后，发现点击预览PDF没有反应。\par
+\qquad  阅读插件的文档里的requirement，得知需要安装distribtuion如TexLive。
+联网安装失败，转投ISO镜像文件安装法。没有发现选择安装包列表的选项……\\
+安装并添加路径后，仍然VScode里的文件仍然无法编译。\par
+ \qquad 阅读LaTex Compile的output后发现：是因为文件路径里有空格。\par
+中文无法显示。\\
+\quad  使用[UTF8]{ctex}；开始还把UTF8放到花括号里了……\\
+\end{document}
