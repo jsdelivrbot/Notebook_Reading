@@ -1,6 +1,6 @@
 # 数据文件的读取与存储
 
-## 读取CSV文件
+## 读取CSV文件为DataFrame
 
 - usercols 指定读取的列
 - dytpe 指定数据类型
@@ -12,6 +12,14 @@
 data = pd.read_csv('data.csv',usecols=[0,1,2],
 dtype={'col1': 'category'},
 skiprows=lambda x: x % 2 != 0)
+```
+
+## 将DataFrame保存为csv
+
+```py
+to_csv(path_or_buf=None, sep=",", na_rep='', float_format=None, columns=None, header=True,
+index=True, # 若T，csv第一列将是DF的index，默认列名为空。
+index_label=None, mode='w', encoding=None, compression=None, quoting=None, quotechar='"', line_terminator='\n', chunksize=None, tupleize_cols=None, date_format=None, doublequote=True, escapechar=None, decimal='.')
 ```
 
 ## DataFrame的序列化
